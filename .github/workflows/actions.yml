@@ -11,8 +11,13 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: 12.22.0
-      - name: Run tests
+      - name: Run tests on headless Chrome
         uses: DevExpress/testcafe-action@latest
         with:
-          version: 1.6.0
+          version: latest
           args: chrome:headless test.js
+      - name: Run tests on headless Firefox
+        uses: DevExpress/testcafe-action@latest
+        with:
+          version: latest
+          args: firefox:headless test.js
