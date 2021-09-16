@@ -1,3 +1,6 @@
+import {createScoreboard} from "/scoreboard.mjs"
+export {createScoreboard}
+
 let monksOrder = true
 export function orderByMonks(monks) {
     monks.sort(monksOrder ? (a, b) => b.username.localeCompare(a.username) : (b, a) => b.username.localeCompare(a.username))
