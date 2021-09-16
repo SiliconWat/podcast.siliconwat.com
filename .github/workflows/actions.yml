@@ -1,5 +1,5 @@
 name: TestCafe
-on: [push, pull-request]
+on: [push, pull_request]
 jobs:
   test:
     name: Run TestCafe
