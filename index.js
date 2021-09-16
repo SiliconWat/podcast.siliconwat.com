@@ -34,3 +34,5 @@ const winners = {
     easy.textContent = winners.junior.easy.username
     easy.href = winners.junior.easy.profile
 })()
+
+testing()
