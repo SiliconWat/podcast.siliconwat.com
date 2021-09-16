@@ -1,9 +1,6 @@
-fixture `Index Page`;
+fixture `Index Page`
+    .page `https://siliconwat.com`;
 
-test('Test1', async t => {
-    console.log("test1")
-});
-
-test('Test2', async t => {
-    console.log("test2")
+test('Click Ninja Monk', async user => {
+    await user.click("header nav a").takeScreenshot();
 });

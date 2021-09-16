@@ -1,9 +1,6 @@
-fixture `Senior Page`;
+fixture `Senior Page`
+    .page `https://siliconwat.com/senior.html`;
 
-test('Test1', async t => {
-    console.log("test1")
-});
-
-test('Test2', async t => {
-    console.log("test2")
+test('Click Ninja Monk', async user => {
+    await user.click("th:nth-of-type(1)").takeScreenshot();
 });
