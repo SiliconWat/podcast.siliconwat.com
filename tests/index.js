@@ -1,4 +1,4 @@
-fixture `MyFixture`;
+fixture `Index Page`;
 
 test('Test1', async t => {
     console.log("test1")

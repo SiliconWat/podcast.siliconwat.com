@@ -1,7 +1,7 @@
 name: TestCafe
 on: [push, pull_request]
 jobs:
-  test:
+  tests:
     name: Run TestCafe
     runs-on: ubuntu-latest
     steps:
@@ -10,14 +10,14 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 12.22.0
+          node-version: latest
       - name: Run tests on headless Chrome
         uses: DevExpress/testcafe-action@latest
         with:
           version: latest
-          args: chrome:headless test.js
+          args: chrome:headless tests/*.js
       - name: Run tests on headless Firefox
         uses: DevExpress/testcafe-action@latest
         with:
           version: latest
-          args: firefox:headless test.js
+          args: firefox:headless tests/*.js
