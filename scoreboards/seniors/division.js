@@ -1,6 +1,7 @@
-import {createScoreboard, orderByMonks, orderByWinnings, orderByCurrentStreaks, orderByLongestStreaks} from "../order.mjs"
+import { seniors } from "../create.mjs"
+import { orderByMonks, orderByWinnings, orderByCurrentStreaks, orderByLongestStreaks } from "../order.mjs"
 
-window.monks = createScoreboard("seniors")
+window.monks = seniors
 window.orderByMonks = orderByMonks
 window.orderByWinnings = orderByWinnings
 window.orderByCurrentStreaks = orderByCurrentStreaks

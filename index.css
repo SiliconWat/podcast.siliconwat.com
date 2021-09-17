@@ -56,8 +56,23 @@ footer a:link, footer a:visited {
     color: white;
 }
 
-section h2 {
+section h2:nth-of-type(1) {
     text-decoration: underline double;
+}
+
+section h2:nth-of-type(2) {
+    text-decoration: underline;
+}
+
+hr {
+    margin-top: 20px;
+}
+
+span {
+    background-color: orange;
+    color: white;
+    padding: 0 5px;
+    border-radius: 40%;
 }
 
 @media (max-width: 480px) {

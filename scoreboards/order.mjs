@@ -1,6 +1,3 @@
-import {createScoreboard} from "./create.mjs"
-export {createScoreboard}
-
 function orderScoreboard (monks) {
     const tbody = document.querySelector("tbody")
     tbody.innerHTML = ""

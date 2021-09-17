@@ -1,6 +1,6 @@
 import {DIVISION, EpisodeWinners} from "/data.mjs" // "../data.mjs"
 
-export function createScoreboard (division) {
+function createScoreboard (division) {
     const scoreboard = []
 
     EpisodeWinners.reverse().forEach(episodeWinners => {
@@ -47,3 +47,6 @@ export function createScoreboard (division) {
 
     return scoreboard
 }
+
+export const seniors = createScoreboard("seniors")
+export const juniors = createScoreboard("juniors")
