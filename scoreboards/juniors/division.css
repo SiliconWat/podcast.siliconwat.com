@@ -15,12 +15,10 @@ header {
 
 main {
     display: flex;
-    flex-flow: column nowrap;
     align-items: center;
     justify-content: center;
-    text-align: center;
     border: 10px double green;
-    width: 50%;
+    width: 60%;
     padding: 25px;
     margin: 30px;
     background-image: linear-gradient(to top left, black, white);
@@ -32,32 +30,35 @@ footer {
     text-align: center;
 }
 
-main section:first-child {
-    background-color: lightpink;
-    width: 70%;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10%;
-}
-
-main section:last-child {
-    background-color: lightgreen;
-    width: 70%;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10%;
-}
-
-h1 a:link, h1 a:visited {
+h1 {
     color: green;
+    text-decoration: underline;
 }
 
 footer a:link, footer a:visited {
     color: white;
 }
 
-section h2 {
-    text-decoration: underline double;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(255, 255, 153, 50%);
+} 
+
+tbody tr:nth-of-type(2n) {
+    background-color: rgba(153, 255, 255, 50%);
+} 
+
+td {
+    text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -67,5 +68,9 @@ section h2 {
 
     main {
         width: 70%;
+    }
+
+    table {
+        font-size: 9pt;
     }
 }

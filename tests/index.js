@@ -1,4 +1,4 @@
-fixture `Index Page`
+fixture `Home Page`
     .page `https://scoreboard.siliconwat.com`;
 
 test('Click Ninja Monk', async user => {

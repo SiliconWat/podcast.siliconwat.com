@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Senior Scoreboard</title>
+        <title>All Episodes Scoreboard</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="icon" href="../logo.png">
-        <link rel="stylesheet" href="senior.css">
-        <script src="senior.js" type="module" defer></script>
+        <link rel="icon" href="/logo.png">
+        <link rel="stylesheet" href="scoreboard.css">
+        <script src="scoreboard.js" type="module" defer></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
@@ -15,26 +15,37 @@
 
   gtag('config', 'G-7B51M16P7H');
 </script>
-
     </head>
     <body>
         <header>
-            <h1>Score Board</h1>
-            <h2>Senior Division</h2>
+            <h1>All Episodes</h1>
+            <h2>Scoreboard</h2>
             <hr />
             <nav>
-                <a href="../index.html">Current Winners</a>
-                <a href="../junior/junior.html">Junior Scoreboard</a>
+                <a href="/scoreboards/seniors/division.html">Seniors</a>
+                <a href="/scoreboards/juniors/division.html">Juniors</a>
+                <a href="/index.html">Home</a>
             </nav>
         </header>
         <main>
             <table>
+                <colgroup>
+                    <col span="1">
+                    <col span="2">
+                    <col span="2">
+                </colgroup>
                 <thead>
                     <tr>
-                        <th onclick="orderByMonks(monks)">Ninja Monk</th>
-                        <th onclick="orderByWinnings(monks)">Winnings</th>
-                        <th onclick="orderByCurrentStreaks(monks)">Current Streak</th>
-                        <th onclick="orderByLongestStreaks(monks)">Longest Streak</th>
+                        <th></th>
+                        <th colspan="2"><a href="/scoreboards/juniors/division.html">Juniors Division</a></th>
+                        <th colspan="2"><a href="/scoreboards/seniors/division.html">Seniors Division</a></th>
+                    </tr>
+                    <tr>
+                        <th>Episode</th>
+                        <th>Easy</th>
+                        <th>Medium</th>
+                        <th>Hard</th>
+                        <th>Extreme</th>
                     </tr>
                 </thead>
                 <tbody></tbody>

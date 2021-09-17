@@ -14,9 +14,11 @@ header {
 }
 
 main {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 10px double green;
-    width: 60%;
+    width: 55%;
     padding: 25px;
     margin: 30px;
     background-image: linear-gradient(to top left, black, white);
@@ -37,9 +39,41 @@ footer a:link, footer a:visited {
     color: white;
 }
 
-th {
-    cursor: pointer;
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+col:nth-of-type(2) {
+    background-color: lightgreen;
+}
+
+col:nth-of-type(3) {
+    background-color: lightpink;
+}
+
+thead tr:first-child {
+    text-transform: uppercase;
+}
+
+thead tr a {
+    text-decoration: none;
+}
+
+thead tr:last-child {
     text-decoration: underline;
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(255, 255, 153, 50%);
+} 
+
+tbody tr:nth-of-type(2n) {
+    background-color: rgba(153, 255, 255, 50%);
+} 
+
+td {
+    text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -52,6 +86,7 @@ th {
     }
 
     table {
-        font-size: 9pt;
+        font-size: 7pt;
     }
 }
+

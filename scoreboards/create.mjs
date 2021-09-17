@@ -1,9 +1,4 @@
-import {EpisodeWinners} from "../model.mjs"
-
-const DIVISION = {
-    senior: ["hard", "extreme"],
-    junior: ["easy", "medium"]
-}
+import {DIVISION, EpisodeWinners} from "/data.mjs" // "../data.mjs"
 
 export function createScoreboard (division) {
     const scoreboard = []

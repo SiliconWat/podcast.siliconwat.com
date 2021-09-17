@@ -14,7 +14,9 @@ header {
 }
 
 main {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 10px double green;
     width: 60%;
     padding: 25px;
@@ -37,9 +39,26 @@ footer a:link, footer a:visited {
     color: white;
 }
 
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
 th {
     cursor: pointer;
     text-decoration: underline;
+}
+
+tbody tr:nth-of-type(2n+1) {
+    background-color: rgba(255, 255, 153, 50%);
+} 
+
+tbody tr:nth-of-type(2n) {
+    background-color: rgba(153, 255, 255, 50%);
+} 
+
+td {
+    text-align: center;
 }
 
 @media (max-width: 480px) {
