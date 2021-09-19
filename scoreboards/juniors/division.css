@@ -31,9 +31,8 @@ footer {
     text-align: center;
 }
 
-h1 {
+h1 a:link, h1 a:visited {
     color: green;
-    text-decoration: underline;
 }
 
 h2 {

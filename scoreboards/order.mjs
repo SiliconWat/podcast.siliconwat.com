@@ -11,7 +11,7 @@ function orderScoreboard (monks) {
         const longestStreak = document.createElement("td")
 
         a.textContent = monk.username
-        a.href = monk.profile
+        a.href = "/scoreboards/monk/profile.html#" + monk.username
         username.appendChild(a)
 
         winnings.textContent = monk.winnings

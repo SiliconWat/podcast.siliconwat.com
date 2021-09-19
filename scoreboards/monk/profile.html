@@ -1,10 +1,10 @@
 <html>
     <head>
-        <title>Seniors Division Scoreboard</title>
+        <title>Coding Monk</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="/logo.png">
-        <link rel="stylesheet" href="division.css">
-        <script src="division.js" type="module" defer></script>
+        <link rel="stylesheet" href="profile.css">
+        <script src="profile.js" type="module" defer></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
@@ -15,14 +15,21 @@
 
   gtag('config', 'G-7B51M16P7H');
 </script>
-
     </head>
     <body>
         <header>
-            <h1><a href="/index.html">Seniors Division</a></h1>
-            <h2>Scoreboard</h2>
+            <h1><a id="username"></a></h1>
+            <h3>
+                Winnings:
+                <span id="winnings"></span>
+                Current Streak:
+                <span id="currentStreak"></span>
+                Longest Streak:
+                <span id="longestStreak"></span>
+            </h3>
             <hr />
             <nav>
+                <a href="/scoreboards/seniors/division.html">Seniors</a>
                 <a href="/scoreboards/juniors/division.html">Juniors</a>
                 <a href="/scoreboards/episodes/scoreboard.html">Episodes</a>
                 <a href="/index.html">Home</a>
@@ -30,12 +37,23 @@
         </header>
         <main>
             <table>
+                <colgroup>
+                    <col span="1">
+                    <col span="2">
+                    <col span="2">
+                </colgroup>
                 <thead>
                     <tr>
-                        <th onclick="orderByMonks(monks)">Ninja Monk</th>
-                        <th onclick="orderByWinnings(monks)">Winnings</th>
-                        <th onclick="orderByCurrentStreaks(monks)">Current Streak</th>
-                        <th onclick="orderByLongestStreaks(monks)">Longest Streak</th>
+                        <th></th>
+                        <th colspan="2"><a href="/scoreboards/juniors/division.html">Juniors Division</a></th>
+                        <th colspan="2"><a href="/scoreboards/seniors/division.html">Seniors Division</a></th>
+                    </tr>
+                    <tr>
+                        <th>Episode</th>
+                        <th>Easy</th>
+                        <th>Medium</th>
+                        <th>Hard</th>
+                        <th>Extreme</th>
                     </tr>
                 </thead>
                 <tbody></tbody>

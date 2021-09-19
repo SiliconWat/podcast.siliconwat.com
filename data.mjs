@@ -11,7 +11,7 @@ export const EpisodeWinners = [
             profile: "https://twitter.com/panhiatha0"
         },
         extreme: {
-            username: "3kiitos",
+            username: "3iitos",
             profile: "https://twitter.com/3iitos"
         },
         podcast: "https://medium.com/siliconwat/podcast-episode-5-validate-password-input-for-a-digit-e56819ca66e"
@@ -27,7 +27,7 @@ export const EpisodeWinners = [
             profile: "https://twitter.com/panhiatha0"
         },
         hard: {
-            username: "3kiitos",
+            username: "3iitos",
             profile: "https://twitter.com/3iitos"
         },
         podcast: "https://medium.com/@thonly/podcast-episode-4-validate-password-length-f70286659604"
@@ -43,7 +43,7 @@ export const EpisodeWinners = [
     // Episode 2
     {
         medium: {
-            username: "3kiitos",
+            username: "3iitos",
             profile: "https://twitter.com/3iitos"
         },
         easy: {
@@ -55,7 +55,7 @@ export const EpisodeWinners = [
     // Episode 1
     {
         medium: {
-            username: "3kiitos",
+            username: "3iitos",
             profile: "https://twitter.com/3iitos"
         },
         easy: {

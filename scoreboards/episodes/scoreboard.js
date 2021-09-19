@@ -18,7 +18,7 @@ EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
         const td = document.createElement("td")
         const a = document.createElement("a")
         a.textContent = episodeWinners[level] ? episodeWinners[level].username : ""
-        a.href = episodeWinners[level] ? episodeWinners[level].profile : ""
+        a.href = episodeWinners[level] ? "/scoreboards/monk/profile.html#" + episodeWinners[level].username : ""
         td.appendChild(a)
         tr.appendChild(td)
     })
