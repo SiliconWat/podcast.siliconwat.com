@@ -1,10 +1,10 @@
 import { DIVISION, EpisodeWinners } from "/data.mjs"
-import {juniors, seniors} from "../create.mjs"
+import {all} from "../create.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 
 if (window.location.hash) {
-    const monk = juniors.find(junior => junior.username === window.location.hash.substring(1)) || seniors.find(senior => senior.username === window.location.hash.substring(1)) // window.location.hash.substring(1)
+    const monk = all.find(monk => monk.username === window.location.hash.substring(1)) // window.location.hash.substring(1)
     username.textContent = monk.username
     username.href = monk.profile // getProfile(monk)
     winnings.textContent = monk.winnings
