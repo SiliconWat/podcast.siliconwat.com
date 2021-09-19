@@ -6,8 +6,12 @@ const tbody = document.querySelector("tbody")
 EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
 
     const tr = document.createElement("tr")
+
     const td = document.createElement("td")
-    td.textContent = EpisodeWinners.length - episodeNumber
+    const a = document.createElement("a")
+    a.textContent = EpisodeWinners.length - episodeNumber
+    a.href = episodeWinners.podcast
+    td.append(a)
     tr.appendChild(td)
 
     levels.forEach(level => {

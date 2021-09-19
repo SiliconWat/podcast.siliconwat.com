@@ -3,17 +3,21 @@ import { top } from "/scoreboards/stats.mjs"
 
 const NA = "No Winner"
 
+podcast.href = EpisodeWinners[0].podcast
+episode.textContent = EpisodeWinners.length
+episode.style.color = "red"
+
 extreme.textContent = EpisodeWinners[0].extreme ? EpisodeWinners[0].extreme.username : NA
-extreme.href = EpisodeWinners[0].extreme ? EpisodeWinners[0].extreme.profile : "#"
+if (EpisodeWinners[0].extreme) extreme.href = EpisodeWinners[0].extreme.profile
 
 hard.textContent = EpisodeWinners[0].hard ? EpisodeWinners[0].hard.username : NA
-hard.href = EpisodeWinners[0].hard ? EpisodeWinners[0].hard.profile : "#"
+if (EpisodeWinners[0].hard) hard.href = EpisodeWinners[0].hard.profile
 
 medium.textContent = EpisodeWinners[0].medium ? EpisodeWinners[0].medium.username : NA
-medium.href = EpisodeWinners[0].medium ? EpisodeWinners[0].medium.profile : "#"
+if (EpisodeWinners[0].medium) medium.href = EpisodeWinners[0].medium.profile
 
 easy.textContent = EpisodeWinners[0].easy ? EpisodeWinners[0].easy.username : NA
-easy.href = EpisodeWinners[0].easy ? EpisodeWinners[0].easy.profile : "#"
+if (EpisodeWinners[0].easy) easy.href = EpisodeWinners[0].easy.profile
 
 // stats
 

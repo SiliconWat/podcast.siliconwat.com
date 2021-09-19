@@ -5,6 +5,7 @@
         <link rel="icon" href="logo.png">
         <link rel="stylesheet" href="index.css">
         <script src="index.js" type="module" defer></script>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="U1SJGuoU"></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
@@ -19,49 +20,55 @@
     </head>
     <body>
         <header>
-            <h1><a href="https://medium.com/siliconwat/one-liner-coding-challenge-podcast-94c2ba226bbb">One-Liner JavaScript Coding Challenge for Frontend Engineers</a></h1>
-            <h2>Winners of <a href="https://medium.com/siliconwat/podcast-episode-5-validate-password-input-for-a-digit-e56819ca66e">Podcast Episode 5</a></h2>
+            <h1><a id="podcast">Podcast Episode <span id="episode"></span></a></h1>
+            <h2><a href="https://anchor.fm/siliconwat/">One-Liner JavaScript Coding Challenge for Frontend Engineers</a></h2>
+            <section>
+                <a href="https://twitter.com/intent/tweet?button_hashtag=onelinerpodcast&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="@thonly #onelinerpodcast " data-url="https://scoreboard.siliconwat.com" data-related="thonly,siliconwat" data-show-count="false">Tweet #onelinerpodcast</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <div id="fb-root"></div>
+                <div class="fb-like" data-href="https://www.facebook.com/siliconwat" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+            </section>
             <hr />
-            <h3>Division Scoreboards</h3>
             <nav>
                 <a href="scoreboards/seniors/division.html">Seniors</a>
                 <a href="scoreboards/juniors/division.html">Juniors</a>
-                <a href="scoreboards/episodes/scoreboard.html">All Episodes</a>
+                <a href="scoreboards/episodes/scoreboard.html">Episodes</a>
             </nav>
         </header>
         <main>
+            <h1>Current Winners</h1>
             <section>
-                <h2>Seniors Division</h2>
+                <h2><a href="scoreboards/seniors/division.html">Seniors Division</a></h2>
                 <h3>Level Extreme</h3>
                 <a id="extreme"></a>
                 <h3>Level Hard</h3>
                 <a id="hard"></a>
                 <hr />
-                <h2>Star Monks</h2>
-                <h3>Highest Winnings: <span id="topseniorwinnings"></span></h3>
+                <h2>Highest Scores</h2>
+                <h3>Winnings: <span id="topseniorwinnings"></span></h3>
                 <a id="seniorwinnings"></a>
-                <h3>Highest Current Streak: <span id="topseniorcurrentstreak"></span></h3>
+                <h3>Current Streak: <span id="topseniorcurrentstreak"></span></h3>
                 <a id="seniorcurrentstreak"></a>
-                <h3>Highest Longest Streak: <span id="topseniorlongeststreak"></span></h3>
+                <h3>Longest Streak: <span id="topseniorlongeststreak"></span></h3>
                 <a id="seniorlongeststreak"></a>
             </section>
             <section>
-                <h2>Juniors Division</h2>
+                <h2><a href="scoreboards/juniors/division.html">Juniors Division</a></h2>
                 <h3>Level Medium</h3>
                 <a id="medium"></a>
                 <h3>Level Easy</h3>
                 <a id="easy"></a>
                 <hr />
-                <h2>Star Monks</h2>
-                <h3>Highest Winnings: <span id="topjuniorwinnings"></span></h3>
+                <h2>Highest Scores</h2>
+                <h3>Winnings: <span id="topjuniorwinnings"></span></h3>
                 <a id="juniorwinnings"></a>
-                <h3>Highest Current Streak: <span id="topjuniorcurrentstreak"></span></h3>
+                <h3>Current Streak: <span id="topjuniorcurrentstreak"></span></h3>
                 <a id="juniorcurrentstreak"></a>
-                <h3>Highest Longest Streak: <span id="topjuniorlongeststreak"></span></h3>
+                <h3>Longest Streak: <span id="topjuniorlongeststreak"></span></h3>
                 <a id="juniorlongeststreak"></a>
             </section>
         </main>
         <footer>
+            <a class="twitter-timeline" data-theme="light" data-height="600" href="https://twitter.com/siliconwat?ref_src=twsrc%5Etfw">Tweets by siliconwat</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             <nav>
                 <a href="https://youtube.com/playlist?list=PL9G55V1b65xDnDUX9eL2-PtVbiOca2Kht">YouTube</a>
                 <a href="https://podcasts.apple.com/us/podcast/one-liner-javascript-coding-challenge-for-frontend/id1581470094">Apple</a>
@@ -69,10 +76,6 @@
                 <a href="https://anchor.fm/siliconwat/">Anchor</a>
                 <a href="https://medium.com/siliconwat/one-liner-podcast/home">Medium</a>
                 <a href="https://codepen.io/collection/RzNjdN">Codepen</a>
-            </nav>
-            <nav>
-                <a href="https://twitter.com/siliconwat">Twitter</a>
-                <a href="https://www.facebook.com/siliconwat/">Facebook</a>
             </nav>
             <small><a href="https://siliconwat.com">Silicon Wat LLC</a> &copy; 2021</small>
         </footer>

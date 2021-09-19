@@ -13,7 +13,8 @@ export const EpisodeWinners = [
         extreme: {
             username: "3kiitos",
             profile: "https://twitter.com/3iitos"
-        }
+        },
+        podcast: "https://medium.com/siliconwat/podcast-episode-5-validate-password-input-for-a-digit-e56819ca66e"
     },
     // Episode 4
     {
@@ -28,14 +29,16 @@ export const EpisodeWinners = [
         hard: {
             username: "3kiitos",
             profile: "https://twitter.com/3iitos"
-        }
+        },
+        podcast: "https://medium.com/@thonly/podcast-episode-4-validate-password-length-f70286659604"
     },
     // Episode 3
     {
         hard: {
             username: "panhiatha0",
             profile: "https://twitter.com/panhiatha0"
-        }
+        },
+        podcast: "https://medium.com/siliconwat/podcast-episode-3-add-hover-effect-to-dom-element-408df9b695d"
     },
     // Episode 2
     {
@@ -46,7 +49,8 @@ export const EpisodeWinners = [
         easy: {
             username: "panhiatha0",
             profile: "https://twitter.com/panhiatha0",
-        }
+        },
+        podcast: "https://medium.com/siliconwat/podcast-episode-2-update-dom-element-content-f086f895d449"
     },
     // Episode 1
     {
@@ -57,6 +61,7 @@ export const EpisodeWinners = [
         easy: {
             username: "panhiatha0",
             profile: "https://twitter.com/panhiatha0",
-        }
+        },
+        podcast: "https://medium.com/siliconwat/podcast-episode-1-style-a-dom-element-1afec863dbe9"
     }
 ]
