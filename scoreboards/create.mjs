@@ -8,7 +8,7 @@ function createScoreboard (division) {
         // looping through each episode
         for (const level in episodeWinners) {
 
-            if (DIVISION[division].includes(level)) {
+            if (division === "all" || DIVISION[division].includes(level)) {
 
                 const levelWinner = episodeWinners[level]
 
@@ -48,5 +48,6 @@ function createScoreboard (division) {
     return scoreboard
 }
 
+export const all = createScoreboard("all")
 export const seniors = createScoreboard("seniors")
 export const juniors = createScoreboard("juniors")
