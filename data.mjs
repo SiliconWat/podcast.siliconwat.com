@@ -3,12 +3,9 @@ export const DIVISION = {
     juniors: ["easy", "medium"]
 }
 
+export const nextEpisode = "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm"
+
 export const EpisodeWinners = [
-    // Episode 6
-    {
-        anchor: "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm",
-        podcast: ""
-    },
     // Episode 5
     {
         hard: {
