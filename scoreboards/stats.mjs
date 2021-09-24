@@ -1,6 +1,6 @@
-import {juniors, seniors} from "./create.mjs"
+import { juniors, seniors } from "./create.mjs"
 
-export const top = {
+const top = {
     seniors: {},
     juniors: {}
 }
@@ -26,3 +26,5 @@ top.juniors.currentStreak = juniors[0]
 // Highest Longest Streak
 juniors.sort((a, b) => b.longestStreak - a.longestStreak)
 top.juniors.longestStreak = juniors[0]
+
+export default top

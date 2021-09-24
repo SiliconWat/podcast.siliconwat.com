@@ -1,4 +1,4 @@
-import {DIVISION, EpisodeWinners} from "/data.mjs" // "../data.mjs"
+import { DIVISION, EpisodeWinners } from "/data.mjs" // "../data.mjs"
 
 function createScoreboard (division) {
     const scoreboard = []

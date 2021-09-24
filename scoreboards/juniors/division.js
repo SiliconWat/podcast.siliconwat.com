@@ -1,5 +1,5 @@
-import {juniors} from "../create.mjs"
-import {orderByMonks, orderByWinnings, orderByCurrentStreaks, orderByLongestStreaks} from "../order.mjs"
+import { juniors } from "../create.mjs"
+import { orderByMonks, orderByWinnings, orderByCurrentStreaks, orderByLongestStreaks } from "../order.mjs"
 
 window.monks = juniors
 window.orderByMonks = orderByMonks

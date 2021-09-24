@@ -37,10 +37,6 @@ footer {
     text-align: center;
 }
 
-footer section {
-    width: 55%;
-}
-
 header section {
     display: flex;
     align-items: center;

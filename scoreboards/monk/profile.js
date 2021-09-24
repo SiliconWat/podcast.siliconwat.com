@@ -1,5 +1,5 @@
 import { DIVISION, EpisodeWinners } from "/data.mjs"
-import {all} from "../create.mjs"
+import { all } from "../create.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 

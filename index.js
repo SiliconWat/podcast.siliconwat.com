@@ -1,5 +1,6 @@
 import { DIVISION, nextEpisode, EpisodeWinners } from "/data.mjs"
-import { top } from "/scoreboards/stats.mjs"
+import top from "/scoreboards/stats.mjs"
+import { generateEpisode } from "/library.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 
@@ -13,17 +14,7 @@ levels.forEach(level => {
     if (EpisodeWinners[0][level]) winner.href = "/scoreboards/monk/profile.html#" + EpisodeWinners[0][level].username
 })
 
-;[{anchor: nextEpisode}, ...EpisodeWinners].forEach(episode => {
-    const url = episode.anchor.split("/")
-    url.splice(4, 0, "embed")
-    const iframe = document.createElement("iframe")
-    iframe.src = url.join("/")
-    iframe.height = "102px"
-    iframe.width = "400px"
-    iframe.frameborder = "0"
-    iframe.scrolling = "no"
-    episodes.appendChild(iframe)
-})
+mostRecentEpisode.appendChild(generateEpisode(nextEpisode))
 
 // stats
 for (const division of ["juniors", "seniors"]) {

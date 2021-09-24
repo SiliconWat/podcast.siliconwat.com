@@ -1,4 +1,5 @@
 import { DIVISION, EpisodeWinners } from "/data.mjs"
+import { generateEpisode } from "/library.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 const tbody = document.querySelector("tbody")
@@ -6,13 +7,14 @@ const tbody = document.querySelector("tbody")
 EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
 
     const tr = document.createElement("tr")
-
     const td = document.createElement("td")
-    const a = document.createElement("a")
-    a.textContent = EpisodeWinners.length - episodeNumber
-    a.href = episodeWinners.podcast
-    td.append(a)
     tr.appendChild(td)
+    td.textContent = EpisodeWinners.length - episodeNumber
+    td.onclick = () => {
+        episode.lastElementChild.remove()
+        episode.appendChild(generateEpisode(episodeWinners.anchor))
+        transcript.href = episodeWinners.podcast
+    }
 
     levels.forEach(level => {
         const td = document.createElement("td")
