@@ -3,7 +3,7 @@ import { DIVISION, EpisodeWinners } from "/data.mjs" // "../data.mjs"
 function createScoreboard (division) {
     const scoreboard = []
 
-    EpisodeWinners.forEach(episodeWinners => {
+    EpisodeWinners.slice().reverse().forEach(episodeWinners => {
         const levelWinners = []
         // looping through each episode
         for (const level in episodeWinners) {

@@ -1,5 +1,5 @@
-import { DIVISION, EpisodeWinners } from "/data.mjs"
-import { generateEpisode } from "/library.mjs"
+import { DIVISION, trailer, EpisodeWinners } from "/data.mjs"
+import { createEmbedUrl } from "/library.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 const tbody = document.querySelector("tbody")
@@ -10,10 +10,9 @@ EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
     const td = document.createElement("td")
     tr.appendChild(td)
     td.textContent = EpisodeWinners.length - episodeNumber
-    td.onclick = () => {
-        episode.lastElementChild.remove()
-        episode.appendChild(generateEpisode(episodeWinners.anchor))
+    td.onclick = () => {        
         transcript.href = episodeWinners.podcast
+        episode.src = createEmbedUrl(episodeWinners.anchor)
     }
 
     levels.forEach(level => {
@@ -28,4 +27,15 @@ EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
     tbody.appendChild(tr)
 })
 
+window.getTrailer = () => {
+    transcript.href = trailer.transcript
+    episode.src = trailer.episode
+}
 
+getTrailer()
+
+// Global site tag (gtag.js) - Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7B51M16P7H');

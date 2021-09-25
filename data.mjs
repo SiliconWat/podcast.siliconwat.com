@@ -3,6 +3,11 @@ export const DIVISION = {
     juniors: ["easy", "medium"]
 }
 
+export const trailer = { 
+    episode: "https://anchor.fm/siliconwat/embed/episodes/Trailer-ATTENTION-All-Frontend-Ninja-Monks-e15sk1e/a-a6ijfh3", 
+    transcript: "https://medium.com/siliconwat/one-liner-coding-challenge-podcast-94c2ba226bbb" 
+}
+
 export const nextEpisode = "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm"
 
 export const EpisodeWinners = [

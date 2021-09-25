@@ -1,6 +1,6 @@
 import { DIVISION, nextEpisode, EpisodeWinners } from "/data.mjs"
 import top from "/scoreboards/stats.mjs"
-import { generateEpisode } from "/library.mjs"
+import { createEmbedUrl } from "/library.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 
@@ -14,7 +14,7 @@ levels.forEach(level => {
     if (EpisodeWinners[0][level]) winner.href = "/scoreboards/monk/profile.html#" + EpisodeWinners[0][level].username
 })
 
-mostRecentEpisode.appendChild(generateEpisode(nextEpisode))
+mostRecentEpisode.src = createEmbedUrl(nextEpisode)
 
 // stats
 for (const division of ["juniors", "seniors"]) {
@@ -25,3 +25,9 @@ for (const division of ["juniors", "seniors"]) {
         monk.href = "/scoreboards/monk/profile.html#" + top[division][score].username
     }
 }
+
+// Global site tag (gtag.js) - Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7B51M16P7H');

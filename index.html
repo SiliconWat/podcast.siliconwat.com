@@ -1,28 +1,18 @@
 <html>
     <head>
-        <title>Podcast: One-Liner JavaScript Coding Challenge for Frontend Engineers</title>
+        <title>Podcast Scoreboard: One-Liner JavaScript Coding Challenge for Frontend Engineers</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="description" content="Scoreboard for Coding Ninja Monks">
+        <meta name="description" content="Podcast Scoreboard for Coding Ninja Monks">
         <link rel="icon" href="logo.png">
         <link rel="stylesheet" href="index.css">
-        <script src="index.js" type="module" defer></script>
-        <script async defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="U1SJGuoU"></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7B51M16P7H');
-</script>
-
+        <script defer src="index.js" type="module"></script>
+        <script defer src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <script defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="U1SJGuoU"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
     </head>
     <body>
         <header>
-            <h1><a id="podcast">Podcast Episode <span id="episode"></span></a></h1>
+            <h1>Podcast Scoreboard</h1>
             <h2><a href="https://anchor.fm/siliconwat/">One-Liner JavaScript Coding Challenge for Frontend Engineers</a></h2>
             <section>
                 <a href="https://twitter.com/intent/tweet?button_hashtag=onelinerpodcast&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="@thonly @siliconwat" data-url="https://scoreboard.siliconwat.com" data-related="thonly,siliconwat" data-show-count="false">Submit answer to #onelinerpodcast</a>
@@ -30,7 +20,7 @@
                 <div class="fb-like" data-href="https://www.facebook.com/siliconwat" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
             </section>
             <br />
-            <section id="mostRecentEpisode"></section>
+            <iframe id="mostRecentEpisode" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
             <hr />
             <nav>
                 <a href="scoreboards/seniors/division.html">Seniors</a>
@@ -39,7 +29,13 @@
             </nav>
         </header>
         <main>
-            <h1>Current Winners</h1>
+            <h1>
+                <a id="podcast">Podcast Episode 
+                    <span id="episode"></span>
+                </a>
+                <br/>
+                Winners
+            </h1>
             <section>
                 <h2><a href="scoreboards/seniors/division.html">Seniors Division</a></h2>
                 <h3>Level Extreme</h3>

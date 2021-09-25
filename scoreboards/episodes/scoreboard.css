@@ -60,6 +60,12 @@ th {
     padding: 10px;
 }
 
+tbody td:first-child {
+    font-weight: bold;
+    color: red;
+    cursor: pointer;
+}
+
 col:nth-of-type(2) {
     background-color: lightgreen;
 }
@@ -78,6 +84,7 @@ thead tr a {
 
 thead tr:last-child {
     text-decoration: underline;
+    cursor: pointer;
 }
 
 tbody tr:nth-of-type(2n+1) {

@@ -1,5 +1,6 @@
-import { DIVISION, EpisodeWinners } from "/data.mjs"
+import { DIVISION, trailer, EpisodeWinners } from "/data.mjs"
 import { all } from "../create.mjs"
+import { createEmbedUrl } from "/library.mjs"
 
 const levels = [...DIVISION.juniors, ...DIVISION.seniors]
 
@@ -16,13 +17,13 @@ if (window.location.hash) {
     EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
 
         const tr = document.createElement("tr")
-
         const td = document.createElement("td")
-        const a = document.createElement("a")
-        a.textContent = EpisodeWinners.length - episodeNumber
-        a.href = episodeWinners.podcast
-        td.append(a)
         tr.appendChild(td)
+        td.textContent = EpisodeWinners.length - episodeNumber
+        td.onclick = () => {        
+            transcript.href = episodeWinners.podcast
+            episode.src = createEmbedUrl(episodeWinners.anchor)
+        }
 
         levels.forEach(level => {
             const td = document.createElement("td")
@@ -39,6 +40,13 @@ if (window.location.hash) {
     })
 } 
 
+window.getTrailer = () => {
+    transcript.href = trailer.transcript
+    episode.src = trailer.episode
+}
+
+getTrailer()
+
 // deprecated
 function getProfile(monk) {
     for (const episodeWinners of EpisodeWinners) {
@@ -50,3 +58,9 @@ function getProfile(monk) {
     }
     return ""
 }
+
+// Global site tag (gtag.js) - Google Analytics
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-7B51M16P7H');

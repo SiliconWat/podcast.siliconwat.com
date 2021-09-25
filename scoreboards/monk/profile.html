@@ -4,17 +4,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="icon" href="/logo.png">
         <link rel="stylesheet" href="profile.css">
-        <script src="profile.js" type="module" defer></script>
-
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7B51M16P7H');
-</script>
+        <script defer src="profile.js" type="module"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7B51M16P7H"></script>
     </head>
     <body>
         <header>
@@ -29,10 +20,10 @@
             </h3>
             <hr />
             <nav>
+                <a href="/index.html">Home</a>
                 <a href="/scoreboards/seniors/division.html">Seniors</a>
                 <a href="/scoreboards/juniors/division.html">Juniors</a>
                 <a href="/scoreboards/episodes/scoreboard.html">Episodes</a>
-                <a href="/index.html">Home</a>
             </nav>
         </header>
         <main>
@@ -49,7 +40,7 @@
                         <th colspan="2"><a href="/scoreboards/seniors/division.html">Seniors Division</a></th>
                     </tr>
                     <tr>
-                        <th>Episode</th>
+                        <th onclick="getTrailer()">Episode</th>
                         <th>Easy</th>
                         <th>Medium</th>
                         <th>Hard</th>
@@ -61,6 +52,10 @@
             </table>
         </main>
         <footer>
+            <section>
+                <h3><a id="transcript" target="_blank">See Transcript on Medium</a></h3>
+                <iframe id="episode" height="102px" width="400px" frameborder="0" scrolling="no"></iframe>
+            </section>
             <nav>
                 <a href="https://youtube.com/playlist?list=PL9G55V1b65xDnDUX9eL2-PtVbiOca2Kht">YouTube</a>
                 <a href="https://podcasts.apple.com/us/podcast/one-liner-javascript-coding-challenge-for-frontend/id1581470094">Apple</a>
