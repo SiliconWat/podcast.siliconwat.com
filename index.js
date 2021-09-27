@@ -9,6 +9,8 @@ episode.textContent = EpisodeWinners.length
 episode.style.color = "red"
 
 levels.forEach(level => {
+    const date = document.getElementById(level + "Date")
+    date.textContent = EpisodeWinners[0][level] ? EpisodeWinners[0][level].date.toString() : ""
     const winner = document.getElementById(level)
     winner.textContent = EpisodeWinners[0][level] ? EpisodeWinners[0][level].username : "No Winner"
     if (EpisodeWinners[0][level]) winner.href = "/scoreboards/monk/profile.html#" + EpisodeWinners[0][level].username

@@ -27,6 +27,8 @@ EpisodeWinners.forEach((episodeWinners, episodeNumber) => {
     tbody.appendChild(tr)
 })
 
+latestEpisode.textContent = EpisodeWinners.length + 1
+
 window.getTrailer = () => {
     transcript.href = trailer.transcript
     episode.src = trailer.episode
