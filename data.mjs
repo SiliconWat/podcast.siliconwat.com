@@ -15,12 +15,12 @@ export const EpisodeWinners = [
     {
         hard: {
             username: "panhiatha0",
-            profile: "https://twitter.com/panhiatha0",
+            profile: "https://twitter.com/panhiatha0/status/1438872233653329921",
             date: new Date(2021, 8, 17, 7, 27)
         },
         extreme: {
             username: "3iitos",
-            profile: "https://twitter.com/3iitos",
+            profile: "https://twitter.com/3iitos/status/1438873064591163393",
             date: new Date(2021, 8, 17, 7, 30)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/5-Validate-Password-Input-for-a-Digit-e174lvv",
@@ -30,17 +30,17 @@ export const EpisodeWinners = [
     {
         easy: {
             username: "panhiatha0",
-            profile: "https://twitter.com/panhiatha0",
+            profile: "https://twitter.com/panhiatha0/status/1438871910146662409",
             date: new Date(2021, 8, 17, 7, 26)
         },
         medium: {
             username: "panhiatha0",
-            profile: "https://twitter.com/panhiatha0",
+            profile: "https://twitter.com/panhiatha0/status/1438871910146662409",
             date: new Date(2021, 8, 17, 7, 26)
         },
         hard: {
             username: "3iitos",
-            profile: "https://twitter.com/3iitos",
+            profile: "https://twitter.com/3iitos/status/1438871869554188293",
             date: new Date(2021, 8, 17, 7, 26)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/4-Validate-Password-Length-e16tm1v",
@@ -50,7 +50,7 @@ export const EpisodeWinners = [
     {
         hard: {
             username: "panhiatha0",
-            profile: "https://twitter.com/panhiatha0",
+            profile: "https://twitter.com/panhiatha0/status/1438871432100921345",
             date: new Date(2021, 8, 17, 7, 24)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/3-Add-Hover-Effect-to-DOM-Element-e16f3a6",
@@ -60,12 +60,12 @@ export const EpisodeWinners = [
     {
         medium: {
             username: "3iitos",
-            profile: "https://twitter.com/3iitos",
+            profile: "https://twitter.com/3iitos/status/1438870551947190275",
             date: new Date(2021, 8, 17, 7, 20)
         },
         easy: {
             username: "panhiatha0",
-            profile: "https://twitter.com/panhiatha0",
+            profile: "https://twitter.com/panhiatha0/status/1438870722563100674",
             date: new Date(2021, 8, 17, 7, 21)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/2-Update-DOM-Element-Content-e1661c3",
@@ -75,12 +75,12 @@ export const EpisodeWinners = [
     {
         medium: {
             username: "3iitos",
-            profile: "https://twitter.com/3iitos",
+            profile: "https://twitter.com/3iitos/status/1438867231153082382",
             date: new Date(2021, 8, 17, 7, 7)
         },
         easy: {
             username: "panhiatha0",
-            profile: "https://twitter.com/panhiatha0",
+            profile: "https://twitter.com/panhiatha0/status/1438869424719609865", // https://twitter.com/panhiatha0/status/1438869295560204306
             date: new Date(2021, 8, 17, 7, 15)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/1-Style-a-DOM-Element-e15nvr5",

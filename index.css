@@ -59,6 +59,10 @@ main section:nth-of-type(2) {
     border-radius: 10%;
 }
 
+main aside {
+    color: white;
+}
+
 header h1 {
     color: green;
     text-transform: uppercase;
