@@ -11,6 +11,21 @@ export const trailer = {
 export const nextEpisode = "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm"
 
 export const EpisodeWinners = [
+    // Episode 6
+    {
+        medium: {
+            username: "panhiatha0",
+            date: new Date(2021, 8, 29, 10, 59),
+            profile: "https://twitter.com/panhiatha0/status/1443274205030535176"
+        },
+        extreme: {
+            username: "3iitos",
+            date: new Date(2021, 8, 29, 11, 48),
+            profile: "https://www.youtube.com/channel/UCGXLK7JCFzNS-FgMf8MCPlA"
+        },
+        anchor: "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm",
+        podcast: "https://medium.com/siliconwat/podcast-episode-6-validate-password-input-for-uppercase-and-lowercase-d0dd794b77a1"
+    },
     // Episode 5
     {
         hard: {
