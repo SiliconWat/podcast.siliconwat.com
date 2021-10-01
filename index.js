@@ -16,7 +16,8 @@ levels.forEach(level => {
     if (EpisodeWinners[0][level]) winner.href = "/scoreboards/monk/profile.html#" + EpisodeWinners[0][level].username
 })
 
-mostRecentEpisode.src = createEmbedUrl(nextEpisode)
+nextEpisodeMedium.href = nextEpisode.medium
+nextEpisodeAnchor.src = createEmbedUrl(nextEpisode.anchor)
 
 // stats
 for (const division of ["juniors", "seniors"]) {

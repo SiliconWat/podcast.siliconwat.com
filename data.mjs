@@ -8,7 +8,11 @@ export const trailer = {
     transcript: "https://medium.com/siliconwat/one-liner-coding-challenge-podcast-94c2ba226bbb" 
 }
 
-export const nextEpisode = "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm"
+export const nextEpisode = {
+    anchor: "https://anchor.fm/siliconwat/episodes/7-Validate-Password-Input-for-a-Special-Character-e184iak",
+    medium: "https://medium.com/siliconwat/podcast-episode-7-validate-password-input-for-a-special-character-28842e337f12"
+}
+
 
 export const EpisodeWinners = [
     // Episode 6
