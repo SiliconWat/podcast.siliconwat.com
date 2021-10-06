@@ -15,6 +15,26 @@ export const nextEpisode = {
 
 
 export const EpisodeWinners = [
+    // Episode 7
+    {
+        easy: {
+            username: "panhiatha0",
+            date: new Date(2021, 9, 6, 12, 52),
+            profile: "https://twitter.com/panhiatha0/status/1445839524316073984"
+        },
+        medium: {
+            username: "panhiatha0",
+            date: new Date(2021, 9, 6, 12, 53),
+            profile: "https://twitter.com/panhiatha0/status/1445839752758890496"
+        },
+        hard: {
+            username: "3iitos",
+            date: new Date(2021, 9, 6, 12, 26),
+            profile: "https://www.facebook.com/3iitos?comment_id=Y29tbWVudDo0MzA3Njc2ODg1OTc3MTQ1XzQzMjIwNDg3NzEyMDY2MjM%3D"
+        },
+        anchor: "",
+        podcast: ""
+    },
     // Episode 6
     {
         medium: {
