@@ -9,8 +9,8 @@ export const trailer = {
 }
 
 export const nextEpisode = {
-    anchor: "https://anchor.fm/siliconwat/episodes/7-Validate-Password-Input-for-a-Special-Character-e184iak",
-    medium: "https://medium.com/siliconwat/podcast-episode-7-validate-password-input-for-a-special-character-28842e337f12"
+    anchor: "https://anchor.fm/siliconwat/episodes/8-Count-Down-e18drli",
+    medium: ""
 }
 
 
@@ -32,8 +32,8 @@ export const EpisodeWinners = [
             date: new Date(2021, 9, 6, 12, 26),
             profile: "https://www.facebook.com/3iitos?comment_id=Y29tbWVudDo0MzA3Njc2ODg1OTc3MTQ1XzQzMjIwNDg3NzEyMDY2MjM%3D"
         },
-        anchor: "",
-        podcast: ""
+        anchor: "https://anchor.fm/siliconwat/episodes/7-Validate-Password-Input-for-a-Special-Character-e184iak",
+        podcast: "https://medium.com/siliconwat/podcast-episode-7-validate-password-input-for-a-special-character-28842e337f12"
     },
     // Episode 6
     {
