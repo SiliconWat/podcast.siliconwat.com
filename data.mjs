@@ -10,11 +10,31 @@ export const trailer = {
 
 export const nextEpisode = {
     anchor: "https://anchor.fm/siliconwat/episodes/8-Count-Down-e18drli",
-    medium: ""
+    podcast: "https://medium.com/siliconwat/podcast-episode-8-count-down-5a8a79b38481"
 }
 
 
 export const EpisodeWinners = [
+    // Episode 8
+    {
+        easy: {
+            username: "panhiatha0",
+            date: new Date(2021, 9, 13, 12, 48),
+            profile: "https://twitter.com/panhiatha0/status/1448375186449829890"
+        },
+        medium: {
+            username: "panhiatha0",
+            date: new Date(2021, 9, 13, 12, 39),
+            profile: "https://twitter.com/panhiatha0/status/1448372952920035328"
+        },
+        hard: {
+            username: "3iitos",
+            date: new Date(2021, 9, 13, 12, 45),
+            profile: "https://www.facebook.com/3iitos?comment_id=Y29tbWVudDo0MzI1MzQwNzI3NTQ0MDk0XzQzNDQyNTg0ODIzMTg5ODU%3D"
+        },
+        anchor: "https://anchor.fm/siliconwat/episodes/8-Count-Down-e18drli",
+        podcast: "https://medium.com/siliconwat/podcast-episode-8-count-down-5a8a79b38481"
+    },
     // Episode 7
     {
         easy: {
