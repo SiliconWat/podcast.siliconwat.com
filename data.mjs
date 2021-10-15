@@ -9,8 +9,8 @@ export const trailer = {
 }
 
 export const nextEpisode = {
-    anchor: "https://anchor.fm/siliconwat/episodes/8-Count-Down-e18drli",
-    podcast: "https://medium.com/siliconwat/podcast-episode-8-count-down-5a8a79b38481"
+    anchor: "https://anchor.fm/siliconwat/episodes/9-Count-Up-e18qaj7",
+    podcast: "https://medium.com/siliconwat/podcast-episode-9-count-up-550903567d1"
 }
 
 
