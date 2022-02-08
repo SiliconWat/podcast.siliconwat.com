@@ -5,12 +5,12 @@ export const DIVISION = {
 
 export const trailer = { 
     episode: "https://anchor.fm/siliconwat/embed/episodes/Trailer-ATTENTION-All-Frontend-Ninja-Monks-e15sk1e/a-a6ijfh3", 
-    transcript: "https://medium.com/siliconwat/one-liner-coding-challenge-podcast-94c2ba226bbb" 
+    transcript: "https://medium.com/siliconwat/podcast-one-liner-javascript-coding-challenge-for-frontend-engineers-801e6f2d534b" 
 }
 
 export const nextEpisode = {
     anchor: "https://anchor.fm/siliconwat/episodes/9-Count-Up-e18qaj7",
-    podcast: "https://medium.com/siliconwat/podcast-episode-9-count-up-550903567d1"
+    podcast: "https://medium.com/siliconwat/podcast-episode-9-count-up-f6d7c0e3b217"
 }
 
 
@@ -33,7 +33,7 @@ export const EpisodeWinners = [
             profile: "https://www.facebook.com/3iitos?comment_id=Y29tbWVudDo0MzI1MzQwNzI3NTQ0MDk0XzQzNDQyNTg0ODIzMTg5ODU%3D"
         },
         anchor: "https://anchor.fm/siliconwat/episodes/8-Count-Down-e18drli",
-        podcast: "https://medium.com/siliconwat/podcast-episode-8-count-down-5a8a79b38481"
+        podcast: "https://medium.com/siliconwat/podcast-episode-8-count-down-fb347879d3f1"
     },
     // Episode 7
     {
@@ -53,7 +53,7 @@ export const EpisodeWinners = [
             profile: "https://www.facebook.com/3iitos?comment_id=Y29tbWVudDo0MzA3Njc2ODg1OTc3MTQ1XzQzMjIwNDg3NzEyMDY2MjM%3D"
         },
         anchor: "https://anchor.fm/siliconwat/episodes/7-Validate-Password-Input-for-a-Special-Character-e184iak",
-        podcast: "https://medium.com/siliconwat/podcast-episode-7-validate-password-input-for-a-special-character-28842e337f12"
+        podcast: "https://medium.com/siliconwat/podcast-episode-7-validate-password-input-for-a-special-character-a3675f975223"
     },
     // Episode 6
     {
@@ -68,7 +68,7 @@ export const EpisodeWinners = [
             profile: "https://www.youtube.com/channel/UCGXLK7JCFzNS-FgMf8MCPlA"
         },
         anchor: "https://anchor.fm/siliconwat/episodes/6-Validate-Password-Input-for-Uppercase-and-Lowercase-e17lmbm",
-        podcast: "https://medium.com/siliconwat/podcast-episode-6-validate-password-input-for-uppercase-and-lowercase-d0dd794b77a1"
+        podcast: "https://medium.com/siliconwat/podcast-episode-6-validate-password-input-for-uppercase-and-lowercase-9651ee2fa811"
     },
     // Episode 5
     {
@@ -83,7 +83,7 @@ export const EpisodeWinners = [
             date: new Date(2021, 8, 17, 7, 30)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/5-Validate-Password-Input-for-a-Digit-e174lvv",
-        podcast: "https://medium.com/siliconwat/podcast-episode-5-validate-password-input-for-a-digit-e56819ca66e"
+        podcast: "https://medium.com/siliconwat/podcast-episode-5-validate-password-input-for-a-digit-ab5a8706f476"
     },
     // Episode 4
     {
@@ -103,7 +103,7 @@ export const EpisodeWinners = [
             date: new Date(2021, 8, 17, 7, 26)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/4-Validate-Password-Length-e16tm1v",
-        podcast: "https://medium.com/@thonly/podcast-episode-4-validate-password-length-f70286659604"
+        podcast: "https://medium.com/siliconwat/podcast-episode-4-validate-password-length-134fdaf07723"
     },
     // Episode 3
     {
@@ -113,7 +113,7 @@ export const EpisodeWinners = [
             date: new Date(2021, 8, 17, 7, 24)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/3-Add-Hover-Effect-to-DOM-Element-e16f3a6",
-        podcast: "https://medium.com/siliconwat/podcast-episode-3-add-hover-effect-to-dom-element-408df9b695d"
+        podcast: "https://medium.com/siliconwat/podcast-episode-3-add-hover-effect-to-dom-element-f6284ace0454"
     },
     // Episode 2
     {
@@ -128,7 +128,7 @@ export const EpisodeWinners = [
             date: new Date(2021, 8, 17, 7, 21)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/2-Update-DOM-Element-Content-e1661c3",
-        podcast: "https://medium.com/siliconwat/podcast-episode-2-update-dom-element-content-f086f895d449"
+        podcast: "https://medium.com/siliconwat/podcast-episode-2-update-dom-element-content-90e7e477d50"
     },
     // Episode 1
     {
@@ -143,6 +143,6 @@ export const EpisodeWinners = [
             date: new Date(2021, 8, 17, 7, 15)
         },
         anchor: "https://anchor.fm/siliconwat/episodes/1-Style-a-DOM-Element-e15nvr5",
-        podcast: "https://medium.com/siliconwat/podcast-episode-1-style-a-dom-element-1afec863dbe9"
+        podcast: "https://medium.com/siliconwat/podcast-episode-1-style-a-dom-element-8626ac2f7d81"
     }
 ]
